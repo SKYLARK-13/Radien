@@ -1,0 +1,134 @@
+.footer_top {
+  display: flex;
+  padding: 60px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+  background-color: rgb(72, 17, 136);
+}
+.footer_bottom {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(72, 17, 136);
+  padding: 30px;
+}
+.footer_bottom > h5 {
+  color: rgb(219, 218, 218);
+}
+
+.branding {
+  padding: 20px;
+}
+.branding > h2 {
+  color: white;
+  font-size: xx-large;
+  cursor: pointer;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 0.1rem;
+}
+.branding > p {
+  margin-top: 20px;
+  color: rgb(184, 174, 174);
+}
+.footer_top > .about {
+  padding: 20px;
+}
+.footer_top > .about > h3 {
+  cursor: pointer;
+  color: rgb(214, 208, 208);
+  margin-bottom: 20px;
+}
+.footer_top > .about > h4 {
+  cursor: pointer;
+  padding: 5px;
+  color: rgb(214, 208, 208);
+}
+
+.footer_top > .company {
+  padding: 20px;
+}
+.company > h3 {
+  cursor: pointer;
+  color: rgb(214, 208, 208);
+  margin-bottom: 20px;
+}
+.company > h4 {
+  cursor: pointer;
+  padding: 5px;
+  color: rgb(214, 208, 208);
+}
+
+.appointment {
+  padding: 20px;
+}
+.appointment > h3 {
+  color: rgb(214, 208, 208);
+  margin-bottom: 20px;
+}
+
+.appointment > .mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mail > .btn1 {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  background-color: rgb(84, 206, 111);
+  margin-left: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.mail > input {
+  border: none;
+  font-size: 15px;
+  background-color: rgb(226, 221, 221);
+  border: none;
+  text-align: center;
+  outline-width: 0;
+}
+.appointment > .icons {
+  margin-top: 20px;
+
+  align-items: flex-start;
+}
+.appointment > .icons > .MuiSvgIcon-root {
+  color: rgb(224, 217, 217);
+  cursor: pointer;
+  padding: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75)
+  );
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .appointment > .mail {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .mail > input {
+    height: 40px;
+  }
+}

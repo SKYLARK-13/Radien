@@ -1,0 +1,24 @@
+.faq {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.faq_top {
+  background-color: #ffffff;
+
+  padding: 40px;
+  flex: 50%;
+}
+.faq_top > h1 {
+  font-weight: 600;
+}
+.faq_bottom {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+
+  flex: 50%;
+}
+

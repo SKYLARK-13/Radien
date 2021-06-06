@@ -1,0 +1,96 @@
+.work {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.work_top {
+  background-color: #ffffff;
+  font-size: 20px;
+
+  padding: 40px;
+  flex: 50%;
+}
+.work_bottom {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+
+  flex: 50%;
+}
+.work_top > .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px;
+  /* width: 80%; */
+}
+
+.cards > .card {
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  height: 200px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.cards > .card > h3 {
+  color: rgb(72, 17, 136);
+  padding: 5px;
+}
+.cards > .card > h4 {
+  padding: 5px;
+  font-size: 20px;
+  text-align: start;
+}
+
+.card > .MuiSvgIcon-root {
+  color: rgb(72, 17, 136);
+  font-size: 5rem;
+  margin-top: 15px;
+}
+
+.work_bottom > h1 {
+  font-weight: 500;
+}
+.work_bottom > p {
+  padding: 10px;
+}
+
+.work_bottom > .sponsers {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+}
+.sponsers > .sponser {
+  cursor: pointer;
+  margin: 30px;
+  height: 100px;
+  width: 100px;
+}
+.sponser > img {
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (max-width: 550px) {
+  .work_bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .sponsers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sponser {
+    align-self: center;
+  }
+}

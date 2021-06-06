@@ -1,0 +1,142 @@
+.header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header_title {
+  align-items: center;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.header_title > h2 {
+  font-size: xx-large;
+  color: black;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.header_title > h2 > span {
+  color: rgb(72, 17, 136);
+}
+
+.header_detail {
+  display: flex;
+  justify-content: space-between;
+}
+.detail_login {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.detail_login > .divider {
+  transform: rotate(90deg);
+}
+.detail_login > h2 {
+  color: rgb(72, 17, 136);
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.detail_button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-right: 30px;
+}
+
+.detail_button > .btn-1 {
+  color: white;
+  background-color: rgb(72, 17, 136);
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.detail_button > .btn-1:hover {
+  color: rgb(72, 17, 136);
+  background-color: white;
+  /* border: 1px solid purple; */
+}
+
+.detail_button > .btn-2 {
+  color: rgb(72, 17, 136);
+  font-weight: 500;
+  background-color: white;
+  border: 1px solid rgb(72, 17, 136);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.detail_button > .btn-2:hover {
+  color: white;
+  background-color: rgb(72, 17, 136);
+}
+
+@media screen and (max-width: 550px) {
+  .header_detail {
+    display: none;
+  }
+  #drop {
+    display: unset !important;
+  }
+}
+.dropbtn {
+  background-color: #f1f1f1;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropbtn > img{
+height: 25px;
+width: 25px;
+}
+
+#drop {
+  display: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /* margin-right: 200px; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(46, 19, 119);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(46, 19, 119);
+  color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}

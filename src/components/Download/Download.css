@@ -1,0 +1,74 @@
+.download {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.download_left {
+  background-color: #fdfdfd;
+  align-items: center;
+  margin-top: 10%;
+  padding: 30px;
+  margin-left: 60px;
+  flex: 50%;
+}
+.download_left > h1 {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.download_left > .download_link {
+  display: flex;
+  /* padding: 20px; */
+}
+.download_link > img {
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+  /* height: 50px;
+  width: 150px; */
+}
+.download_right {
+  background-color: rgb(255, 254, 254);
+  /* padding: 10px; */
+
+  flex: 50%;
+}
+.download_right > img {
+  position: relative;
+  margin-bottom: -18%;
+  height: 800px;
+  width: 900px;
+}
+
+@media screen and (max-width: 550px) {
+  .download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .download_left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+
+  .download_left > h1 {
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .download_left > .download_link {
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+  }
+
+  .download_right > img {
+    /* position: relative;
+  margin-bottom: -18%; */
+    position: relative;
+    left: 0;
+    height: 400px;
+    width: 450px;
+  }
+}

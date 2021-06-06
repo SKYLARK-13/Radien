@@ -1,0 +1,98 @@
+.features {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.features_top {
+  background-color: rgb(72, 17, 136);
+  font-size: 20px;
+  color: white;
+  padding: 60px;
+  flex: 50%;
+}
+
+.features_top > h1 {
+  font-weight: 300;
+}
+
+.features_bottom {
+  background-color: rgb(255, 255, 255);
+  padding: 70px;
+
+  flex: 50%;
+}
+
+.feature_icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.feature_icons > .feature_icon {
+  cursor: pointer;
+  padding: 20px;
+  height: 60px;
+  width: 100px;
+}
+.feature_icon > img {
+  height: 60px;
+  width: 60px;
+}
+.feature_icon > h4 {
+  /* padding: 10px; */
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 300;
+  align-self: center;
+}
+
+.features_bottom > h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.trust_cards {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+}
+.trust_cards > .trust_card {
+  display: flex;
+  width: 200px;
+  box-shadow: 0px 6px 18px -9px rgba(77, 75, 75, 0.75);
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.trust_card > .MuiSvgIcon-root {
+  color: rgb(64, 255, 105);
+  font-size: 3rem;
+}
+.trust_card > h4 {
+  align-self: center;
+  padding: 10px;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.trust_card > h4 > span {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 550px) {
+  .feature_icon {
+    margin-top: 30px;
+  }
+  .trust_cards {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+  }
+}
